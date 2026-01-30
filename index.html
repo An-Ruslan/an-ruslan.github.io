@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img class="profile__avatar" src="avatar.png" alt="avatar">
+                <div class="profile__info">
+                    <p class="profile__name">Ruslan</p>
+                    <p class="profile__role">Frontend Developer</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item">Главная</li>
+                    <li class="nav__item">Навыки</li>
+                    <li class="nav__item">Проекты</li>
+                    <li class="nav__item">Контакты</li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle">
+                <!-- Sun -->
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"></circle>
+                        <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                        <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                    </g>
+                </svg>
+
+                <!-- Moon -->
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" fill="#000000" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" id="moon-alt" class="icon glyph" transform="rotate(90)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="currentColor"
+                            d="M12,2h-.46a1,1,0,0,0-.9.77,1,1,0,0,0,.46,1.09A5.92,5.92,0,0,1,14,9,6,6,0,0,1,3.93,13.4a1,1,0,0,0-1.65,1A10,10,0,1,0,12,2Z">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+
+                <!-- Левая часть: текст -->
+                <div class="hero__text">
+                    <h1 class="hero__title">Руслан — <br>
+                        <span>Frontend </span> <br>
+                        Developer
+                    </h1>
+                    <p class="hero__description"> Frontend разработчик, создающий чистые и <br>
+                        удобные интерфейсы с
+                        современными <br>
+                        технологиями. </p>
+                    <div class="hero__actions"> <a href="" class="btn btn--primary">Связаться</a> <a href=""
+                            class="btn btn--secondary">Посмотреть проекты</a> </div>
+                </div>
+
+                <!-- Правая часть: фото -->
+                <div class="hero__photo-wrapper">
+                    <img src="avatar.png" alt="Руслан" class="hero__photo" />
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="skills__title">Skills & Technologies</h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <img src="skills icons/html5.svg" alt="HTML5" class="skill-card__icon" />
+                        <p class="skill-card__label">HTML5</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="skills icons/css3.svg" alt="CSS3" class="skill-card__icon" />
+                        <p class="skill-card__label">CSS3</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="skills icons/js.svg" alt="JavaScript" class="skill-card__icon" />
+                        <p class="skill-card__label">JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="skills icons/react.svg" alt="React" class="skill-card__icon" />
+                        <p class="skill-card__label">React</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects__header">
+                    <div class="projects__info">
+                        <h2 class="projects__title">Recent Projects</h2>
+                        <p class="projects__subtitle">Коллекция моих последних работ и пет-проектов</p>
+                    </div>
+
+                    <a href="#" class="projects__github">Смотреть все на GitHub →</a>
+                </div>
+
+                <div class="projects__grid">
+
+                    <div class="project-card">
+
+                        <!-- Верхняя часть: превью -->
+                        <div class="project-card__preview">
+                            <img src="projects preview/project1.png" alt="Analytics Dashboard Preview"
+                                class="project-card__image" />
+                            <div class="project-card__overlay">
+                                <ul class="project-card__tags">
+                                    <li>React</li>
+                                    <li>Chart.js</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Нижняя часть: контент -->
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Analytics Dashboard</h3>
+                            <p class="project-card__description">
+                                Комплексная панель управления для мониторинга бизнес-метрик в реальном времени.
+                            </p>
+                            <div class="project-card__footer">
+                                <a href="#" class="project-card__link">🔗 Demo</a>
+                                <a href="#" class="project-card__link">💻 Code</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project-card__preview">
+                            <img src="projects preview/project2.png" alt="Modern E-commerce Preview"
+                                class="project-card__image" />
+                            <div class="project-card__overlay">
+                                <ul class="project-card__tags">
+                                    <li>React</li>
+                                    <li>Chart.js</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Modern E-commerce</h3>
+                            <p class="project-card__description">
+                                Минималистичный интернет-магазин с фокусом на UX и быструю загрузку.
+                            </p>
+                            <div class="project-card__footer">
+                                <a href="#" class="project-card__link">🔗 Demo</a>
+                                <a href="#" class="project-card__link">💻 Code</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__preview">
+                            <img src="projects preview/project3.png" alt="Task Manager App Preview"
+                                class="project-card__image" />
+                            <div class="project-card__overlay">
+                                <ul class="project-card__tags">
+                                    <li>React</li>
+                                    <li>Chart.js</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Task Manager App</h3>
+                            <p class="project-card__description">
+                                Мобильное приложение для продуктивности с кросс-платформенной синхронизацией.
+                            </p>
+                            <div class="project-card__footer">
+                                <a href="#" class="project-card__link">🔗 Demo</a>
+                                <a href="#" class="project-card__link">💻 Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__card">
+                    <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
+                    <p class="cta__subtitle">
+                        Я всегда открыт для интересных предложений, коллабораций и фриланс-проектов. Напишите мне!
+                    </p>
+
+                    <div class="cta__actions">
+                        <a href="mailto:your@email.com" class="btn btn--white">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg> Email me
+                        </a>
+                        <a href="https://t.me/yourusername" class="btn btn--outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg> Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <span class="logo-circle">P</span>
+                    <span class="logo-text">Ruslan.dev</span>
+                </div>
+
+                <nav class="footer__nav">
+                    <a href="https://github.com/твой-логин" target="_blank" class="footer__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/твой-логин" target="_blank" class="footer__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://t.me/твой-логин" target="_blank" class="footer__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Telegram
+                    </a>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    © 2026 Руслан • Сделано с фокусом на чистый UI и современный код.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" script.js">
+    </script>
+</body>
+
+</html>
